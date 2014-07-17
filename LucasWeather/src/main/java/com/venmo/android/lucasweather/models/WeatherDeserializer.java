@@ -1,4 +1,4 @@
-package com.venmo.android.lucasweather;
+package com.venmo.android.lucasweather.models;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
@@ -28,7 +28,10 @@ public class WeatherDeserializer implements JsonDeserializer<Weather> {
         final int humidty = tempJsonObject.get("humidity").getAsInt();
         final String weatherImage = weatherJsonObject.get("main").getAsString();
         final String weatherIconId = weatherJsonObject.get("icon").getAsString();
-        final int rain = mainJsonObject.getAsJsonObject("rain").get("3h").getAsInt();
+
+        int rain = 0;
+        if (mainJsonObject.has("rain"))
+            rain = mainJsonObject.getAsJsonObject("rain").get("3h").getAsInt();
 
         Weather weather = new Weather();
         weather.setDTID(dt);

@@ -8,24 +8,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 import com.venmo.android.lucasweather.layouts.devsmart.HorizontalListView;
+import com.venmo.android.lucasweather.models.DailyWeatherDeserializer;
+import com.venmo.android.lucasweather.models.DailyWeatherLabDeserializer;
 import com.venmo.android.lucasweather.models.Weather;
+import com.venmo.android.lucasweather.models.WeatherDeserializer;
 import com.venmo.android.lucasweather.models.WeatherLab;
+import com.venmo.android.lucasweather.models.WeatherLabDeserializer;
 
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Calendar;
 
 /**
  * Created by thomasjeon on 7/12/14.

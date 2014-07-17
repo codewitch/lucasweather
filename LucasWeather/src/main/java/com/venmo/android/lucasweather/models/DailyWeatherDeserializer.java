@@ -1,4 +1,4 @@
-package com.venmo.android.lucasweather;
+package com.venmo.android.lucasweather.models;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;

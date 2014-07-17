@@ -1,4 +1,4 @@
-package com.venmo.android.lucasweather;
+package com.venmo.android.lucasweather.models;
 
 import android.content.Context;
 
@@ -18,11 +18,11 @@ import java.util.ArrayList;
 /**
  * Created by thomasjeon on 7/14/14.
  */
-public class DailyWeatherLabDeserializer implements JsonDeserializer<WeatherLab> {
+public class WeatherLabDeserializer implements JsonDeserializer<WeatherLab> {
 
     private Context mAppContext;
 
-    public DailyWeatherLabDeserializer(Context context) {
+    public WeatherLabDeserializer(Context context) {
         super();
         mAppContext = context;
     }
@@ -32,14 +32,19 @@ public class DailyWeatherLabDeserializer implements JsonDeserializer<WeatherLab>
 
         final JsonObject mainJsonObject = json.getAsJsonObject();
 
+        final JsonObject cityJsonObject = mainJsonObject.getAsJsonObject("city");
+        final String city = cityJsonObject.get("name").getAsString();
+        final String country = cityJsonObject.get("country").getAsString();
+
         final JsonArray weatherJsonArray = mainJsonObject.getAsJsonArray("list");
 
         Type arrayListWeatherType = new TypeToken<ArrayList<Weather>>() {}.getType();
-        ArrayList<Weather> dailyWeathers = context.deserialize(weatherJsonArray, arrayListWeatherType);
+        ArrayList<Weather> hourlyWeathers = context.deserialize(weatherJsonArray, arrayListWeatherType);
 
         WeatherLab weatherLab = WeatherLab.get(mAppContext);
 
-        weatherLab.setDailyWeathers(dailyWeathers);
+        weatherLab.setCity(city);
+        weatherLab.setHourlyWeathers(hourlyWeathers);
 
         return weatherLab;
     }
