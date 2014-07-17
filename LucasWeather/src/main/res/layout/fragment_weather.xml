@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/meme_banner_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/meme_banner_text"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:includeFontPadding="false"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/banner"
+            android:text="LUCAS"/>
+
+        <TextView
+            android:id="@+id/meme_body_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/meme_banner_text"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text="likes it\nHOT!"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/meme_image"
+        android:layout_width="175dp"
+        android:layout_height="265dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/lucas"/>
+
+    <LinearLayout
+        android:id="@+id/selected_day_section"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_below="@id/meme_banner_wrapper"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/selected_day_header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            style="@style/line_separator_below">
+
+            <TextView
+                android:id="@+id/city_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:text="New York"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/selected_day_of_week_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/city_textview"
+                android:text="Monday"
+                android:textSize="20dp"/>
+            
+            <TextView
+                android:id="@+id/selected_day_current_temp_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="bottom"
+                android:text="84˚"
+                android:textSize="55dp"/>
+
+        </RelativeLayout>
+
+        <com.venmo.android.lucasweather.layouts.devsmart.HorizontalListView
+            android:id="@+id/selected_day_listview"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            style="@style/line_separator_below"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/five_day_listview"
+        android:layout_width="220dp"
+        android:layout_height="265dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        >
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/daily_day_of_week_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="Friday"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/daily_low_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="70˚"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/daily_high_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/daily_low_temp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:text="80˚"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <ImageView
+        android:id="@+id/daily_weather_image"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/daily_high_temp"
+        android:gravity="center_vertical"
+        android:src="@drawable/weather_partly_sunny"/>
+
+</RelativeLayout>
