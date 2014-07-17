@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -123,11 +124,16 @@ public class WeatherFragment extends Fragment {
 
     private void updateSelectedDayWeather(String selectedDay) {
         ArrayList<Weather> selected24Hours = WeatherLab.get(getActivity()).getDay24HWeathers(selectedDay);
-        WeatherListAdapter adapter = new WeatherListAdapter(selected24Hours);
-        mSelectedDayListView.setAdapter(adapter);
 
-        updateLucasHeader(selected24Hours.get(0));
-        updateSelectedDayHeader(selected24Hours.get(0));
+        if(selected24Hours.size() > 0){
+            WeatherListAdapter adapter = new WeatherListAdapter(selected24Hours);
+            mSelectedDayListView.setAdapter(adapter);
+
+            updateLucasHeader(selected24Hours.get(0));
+            updateSelectedDayHeader(selected24Hours.get(0));
+        }else {
+            Toast.makeText(getActivity(), R.string.no_data_available, Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void addDailyWeatherToView(Weather w) {
