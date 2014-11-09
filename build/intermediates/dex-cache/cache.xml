@@ -8,29 +8,11 @@
         revision="19.1.0"
         sha1="4c8d1536dba3812cc1592090dc20c47a4ed3c35e"/>
     <item
-        dex="/Users/thomasjeon/Documents/sideprojects/AndroidStudioProjects/LucasWeather/LucasWeather/build/intermediates/pre-dexed/debug/gson-2.2.4-78c4f4f5cdb39dc02d11d05a5f77fbf9067e437e.jar"
-        jar="/Users/thomasjeon/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="a60a5e993c98c864010053cb901b7eab25306568"/>
-    <item
-        dex="/Users/thomasjeon/Documents/sideprojects/AndroidStudioProjects/LucasWeather/LucasWeather/build/intermediates/pre-dexed/debug/okio-1.0.0-d7b9dba660e3feed0fbf368a4ceffdd24751aed6.jar"
-        jar="/Users/thomasjeon/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.0.0/2534c458682c73f5b9871131ab3098d3f987ca3/okio-1.0.0.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="02534c458682c73f5b9871131ab3098d3f987ca3"/>
-    <item
         dex="/Users/thomasjeon/Documents/sideprojects/AndroidStudioProjects/LucasWeather/LucasWeather/build/intermediates/pre-dexed/debug/okhttp-urlconnection-2.0.0-00499503814a1d21855924b19b48bf47fac1440f.jar"
         jar="/Users/thomasjeon/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-urlconnection/2.0.0/afe8399d352713b66e597e9670c741d1e60ae923/okhttp-urlconnection-2.0.0.jar"
         jumboMode="false"
         revision="19.1.0"
         sha1="afe8399d352713b66e597e9670c741d1e60ae923"/>
-    <item
-        dex="/Users/thomasjeon/Documents/sideprojects/AndroidStudioProjects/LucasWeather/LucasWeather/build/intermediates/pre-dexed/debug/classes-e0c5db073eedc3a1c060d4e16b47e5caa40f4b09.jar"
-        jar="/Users/thomasjeon/Documents/sideprojects/AndroidStudioProjects/LucasWeather/LucasWeather/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
-        jumboMode="false"
-        revision="19.1.0"
-        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
     <item
         dex="/Users/thomasjeon/Documents/sideprojects/AndroidStudioProjects/LucasWeather/LucasWeather/build/intermediates/pre-dexed/debug/picasso-2.3.0-683db9b395935ea4079bc257d053fbb75d2020ca.jar"
         jar="/Users/thomasjeon/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.3.0/3c473ebbfeef016ab2ff977e84868b821070a5f6/picasso-2.3.0.jar"
@@ -43,5 +25,23 @@
         jumboMode="false"
         revision="19.1.0"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="/Users/thomasjeon/Documents/sideprojects/AndroidStudioProjects/LucasWeather/LucasWeather/build/intermediates/pre-dexed/debug/gson-2.2.4-78c4f4f5cdb39dc02d11d05a5f77fbf9067e437e.jar"
+        jar="/Users/thomasjeon/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568"/>
+    <item
+        dex="/Users/thomasjeon/Documents/sideprojects/AndroidStudioProjects/LucasWeather/LucasWeather/build/intermediates/pre-dexed/debug/okio-1.0.0-d7b9dba660e3feed0fbf368a4ceffdd24751aed6.jar"
+        jar="/Users/thomasjeon/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.0.0/2534c458682c73f5b9871131ab3098d3f987ca3/okio-1.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="02534c458682c73f5b9871131ab3098d3f987ca3"/>
+    <item
+        dex="/Users/thomasjeon/Documents/sideprojects/AndroidStudioProjects/LucasWeather/LucasWeather/build/intermediates/pre-dexed/debug/classes-e0c5db073eedc3a1c060d4e16b47e5caa40f4b09.jar"
+        jar="/Users/thomasjeon/Documents/sideprojects/AndroidStudioProjects/LucasWeather/LucasWeather/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
 
 </pre-dex-items>
